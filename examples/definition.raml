@@ -74,11 +74,18 @@ baseUri: /
             date_in:
                 type: date-only
                 required: true
-                example: 2016-09-19
+                example: 2016-04-09
+                #examples:
+                #    D1: 2016-09-19
+                #    D2: 2020-09-08
+                #    D3: 2020-09-08
             date_out:
                 type: date-only
                 required: true
-                example: 2016-09-19
+                example: 2017-09-19
+                #examples:
+                #    D1: 2019-09-19
+                #    D2: 2018-09-05
 
 /task/type/defined:
     get:
@@ -102,5 +109,8 @@ types:
                 type: integer
                 required: true
             name:
+                type: string
+                required: true
+            error:
                 type: string
                 required: true
